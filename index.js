@@ -12,11 +12,12 @@ app.set('layout extractScripts',true);
 //Use router
 app.use(express.static('./assets'));
 app.use(expressLayout);
+// require mongoose
+const db = require('./config/mongoose');
 // using router
 app.use('/',require('./routes/index'));
 
-// require mongoose
-// const db = require('./config/mongoose');
+
 
 
 
