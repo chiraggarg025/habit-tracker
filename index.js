@@ -17,13 +17,6 @@ const db = require('./config/mongoose');
 // using router
 app.use('/',require('./routes/index'));
 
-
-
-
-
-
-
-
 // port where server listens
 app.listen(port,function(err){
     if(err){
