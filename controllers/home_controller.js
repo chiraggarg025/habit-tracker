@@ -7,7 +7,7 @@ module.exports.home = function(req,res){
             return;
         }
         return res.render('home',{
-            title:"Habit Tracker",
+            title:"LoopBit",
             habit_list:habits
         });
     })
@@ -19,8 +19,9 @@ module.exports.createHabit = function(req,res){
         habit : req.body.habit,
         end : req.body.end,
         description:req.body.description,
-        frequency:req.body.frequency
-
+        frequency:req.body.frequency,
+        date:Date(),
+        time:req.body.time
     },function(err,newHabit){
         if(err){
             console.log('Error in creating habit',err);

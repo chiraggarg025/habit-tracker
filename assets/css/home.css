@@ -2,7 +2,7 @@
 #add-habit-form{
     /* display: none; */
     position: absolute;
-    top: 15%;
+    top: 12%;
     display: none;
     left:40%;
     background-color: rgb(216, 223, 230);
@@ -49,6 +49,9 @@
 }
 .habit-streak p{
     margin: 0;
+}
+.checked{
+    text-decoration: line-through;
 }
 /* toast message */
 /* #msg-container{

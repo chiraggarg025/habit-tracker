@@ -13,3 +13,10 @@ document.getElementById('cancel-habit').addEventListener('click',function(){
     document.getElementById('add-habit-form').style.display='none';
     document.getElementById('btn-add-habit').style.display='block';
 })
+// marking a habit as done
+var list = document.querySelector('#habits');
+list.addEventListener('click', function(event) {
+if (event.target.tagName === 'LI') {
+    event.target. classList.toggle('checked');
+}
+}, false);
