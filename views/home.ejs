@@ -44,9 +44,15 @@
             <li class="list-group-item list-group-item-success habit">
                 <div class="habit-info">
                     <span id="habit-name"><h4><%= i.habit %></h4> </span>
-                    <a class="btn btn-danger" href="/delete-habit/?id=<%=i._id%>">
-                        <i class="fa fa-times"></i> Remove
-                    </a>
+                    <div>
+                        <a class="btn btn-success" href="/update-habit/?id=<%=i._id%>">
+                            <i class="fa fa-info"></i> Update
+                        </a>
+                        <a class="btn btn-danger" href="/delete-habit/?id=<%=i._id%>">
+                            <i class="fa fa-times"></i> Remove
+                        </a>
+                    </div>
+                    
                 </div>
                 <div class="row habit-streak">
                     <%if(i.end!=""){ %>

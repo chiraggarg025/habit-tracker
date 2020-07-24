@@ -1,1 +1,56 @@
-<h1>Details Weekly</h1>
+<link rel="stylesheet" href="/css/details.css">
+<!-- heading -->
+<div id="heading">
+    <h1>
+        <span><i class="fa fa-chevron-left"></i></span>
+    </h1>
+    <h1>
+        <span>Weekly Summary(July 2020)</span>
+    </h1>
+    <h1>
+    <span><i class="fa fa-chevron-right"></i></span>
+    </h1>
+ 
+</div>
+<!-- container for habits -->
+<div class="container rounded bg-white shadow p-3 mb-5" id="box">
+    <!-- list for habits -->
+    <div>
+        <ul class="week-days">
+            <li class="list-group-item">SUN</li>
+            <li class="list-group-item">MON</li>
+            <li class="list-group-item">TUE</li>
+            <li class="list-group-item">WED</li>
+            <li class="list-group-item">THUR</li>
+            <li class="list-group-item">FRI</li>
+            <li class="list-group-item">SAT</li>
+        </ul>
+        <ul class="list-group" id="habits">
+            <%for(let i of habit_list){%>
+            <li class="list-group-item list-group-item-info habit">
+                <div class="row habit-streak">
+                    <span id="habit-name"><h4><%= i.habit %></h4> </span>
+                    <%if(i.end!=""){ %>
+                    <p class="col-lg-3">Ending on : <%=i.end%></p>
+                    <%}else{%>
+                    <p class="col-lg-3">Building this forever</p>
+                    <%}%>
+                    <p class="col-lg-3">Streak : 38/82</p>
+                    <p class="col-lg-3"> <%=i.time%> <%=i.frequency%></p>
+                </div>
+                <ul class ="week-days">
+                    <li class="list-group-item">25</li>
+                    <li class="list-group-item">26</li>
+                    <li class="list-group-item">27</li>
+                    <li class="list-group-item">28</li>
+                    <li class="list-group-item">29</li>
+                    <li class="list-group-item">30</li>
+                    <li class="list-group-item">31</li>
+                </ul>
+                
+            </li>
+            <%}%>
+          </ul>
+    </div>
+
+</div>

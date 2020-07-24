@@ -22,7 +22,13 @@ const habitSchema = new mongoose.Schema({
     time:{
         type:String,
         required:true
-    }
+    },
+    done :[{
+        type:Boolean
+    }],
+    notDone :[{
+        type:Boolean
+    }]
 
 })
 
