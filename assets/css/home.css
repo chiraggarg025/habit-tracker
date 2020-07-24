@@ -1,0 +1,28 @@
+/* styling box */
+#box{
+
+    margin-top: 3%;
+    padding: 3% !important;
+}
+.input-group input{
+    font-size: 1.2rem;
+}
+#box ul{
+    max-height: 60vh;
+    overflow-y:auto;
+}
+/* list iems showing habits */
+#habits li{
+    display: flex;
+    flex-direction: column;
+}
+/* info for a particular habit */
+.habit-info{
+    display: flex;
+    justify-content: space-between;
+}
+/* the streak for a particular habit in list */
+.habit-streak{
+    display: flex;
+    justify-content: space-evenly;
+}
