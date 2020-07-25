@@ -29,8 +29,10 @@ module.exports.updateHabit = function(req,res){
             if(prop==day){
                 if(val=="none"){
                     newHabit.days[day]="yes";
+                    newHabit.streak++;
                 }else if(val=="yes"){
                     newHabit.days[day]="no";
+                    newHabit.streak--;
                 }else{
                     newHabit.days[day]="none";
                 }

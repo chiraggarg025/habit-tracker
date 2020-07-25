@@ -23,7 +23,10 @@ const habitSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    
+    streak:{
+        type:Number,
+        default:0
+    },
     days:{
         one:{
             type:String,
