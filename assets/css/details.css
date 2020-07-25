@@ -11,6 +11,7 @@
     padding: 2% !important;
     margin-top: 0.5%;
 }
+/* styling week days container */
 .week-days {
     display: flex !important;
     justify-content: space-evenly;
@@ -19,7 +20,7 @@
     cursor: pointer;
     
 }
-
+/* hover week name */
 #weekname :hover {
     background-color: rgb(233, 222, 222);
 }

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// connecting to mongoose
 mongoose.connect('mongodb://localhost/habit_tracker_development');
 // mongoose database connection
 const db = mongoose.connection;

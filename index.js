@@ -5,9 +5,6 @@ const port= 8000;
 const db = require('./config/mongoose');
 const path=require('path')
 const expressLayout = require('express-ejs-layouts');
-// requiring moment
-const moment = require('moment');
-moment().format(); 
 // set view engine
 app.set('view engine','ejs');
 app.set('views','./views');

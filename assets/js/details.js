@@ -1,3 +1,18 @@
+
+// getting month and year
+let month = moment().format("MMMM YYYY");
+document.getElementById('month-name').innerText=month;
+
+// showing week days using momentjs
+var weekDays = document.getElementsByClassName('day-name');
+for(let i=0;i<weekDays.length;i++){
+    if(i==0){
+        weekDays[i].innerText="Today/"+moment().subtract(i, 'days').format("Do");
+        weekDays[i].style.fontWeight="700";
+    }else{
+        weekDays[i].innerText=moment().subtract(i, 'days').format("ddd/Do");
+    }
+}
 // changing status design of the data i.e(pending,done,not done)
 let days = document.getElementsByClassName('days');
 days[0].style.fontWeight="700";
