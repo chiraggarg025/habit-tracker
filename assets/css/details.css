@@ -8,8 +8,8 @@
 }
 /* styling box */
 #box{
-    margin-top: 1%;
-    padding: 3% !important;
+    padding: 2% !important;
+    margin-top: 0.5%;
 }
 .week-days {
     display: flex !important;
@@ -27,7 +27,7 @@
 }
 /* box containing habits */
 #box #habits{
-    max-height: 60vh;
+    max-height: 55vh;
     overflow-y:auto;
 }
 /* list iems showing habits */
@@ -52,6 +52,4 @@
 .habit-streak p{
     margin: 0;
 }
-.checked{
-    text-decoration: line-through;
-}
+

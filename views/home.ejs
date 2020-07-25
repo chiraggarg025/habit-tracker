@@ -37,12 +37,15 @@
     </div>
     
         <button class="btn btn-success" id="btn-add-habit"><i class="fa fa-plus"></i> Add New Habit</button>
+        <a class="btn btn-primary" href="/details" role="button" id="btn-streak"><i class="fa fa-check"></i> Show My Streak</a>
+
     <!-- list for habits -->
     <div>
         <ul class="list-group" id="habits">
             <%for(let i of habit_list){%>
             <li class="list-group-item list-group-item-success habit">
                 <div class="habit-info">
+                    <!-- <span><i class="fa fa-check"></i></span> -->
                     <span id="habit-name"><h4><%= i.habit %></h4> </span>
                     <div>
                         <a class="btn btn-success" href="/update-habit/?id=<%=i._id%>">
@@ -61,7 +64,7 @@
                     <p class="col-lg-3">Building this forever</p>
                     <%}%>
                     <p class="col-lg-3"><%=i.description%></p>
-                    <p class="col-lg-3">Streak : 38/82</p>
+                    <p class="col-lg-3">Streak :32/82</p>
                     <p class="col-lg-3"> <%=i.time%> <%=i.frequency%></p>
                 </div>
                 

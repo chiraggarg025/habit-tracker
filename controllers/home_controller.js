@@ -15,18 +15,30 @@ module.exports.home = function(req,res){
 }
 module.exports.createHabit = function(req,res){
     console.log(req.body.description);
+    let days = {
+        one:"none",
+        two:"none",
+        three:"none",
+        four:"none",
+        five:"none",
+        six:"none",
+        seven:"none",
+    }
     Habit.create({
         habit : req.body.habit,
         end : req.body.end,
         description:req.body.description,
         frequency:req.body.frequency,
         date:Date(),
-        time:req.body.time
+        time:req.body.time,
+        days:days
+        
     },function(err,newHabit){
         if(err){
             console.log('Error in creating habit',err);
             return;
         }
+        
         console.log(newHabit);
         return res.redirect('back');
     });
