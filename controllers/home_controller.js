@@ -15,7 +15,6 @@ module.exports.home = function(req,res){
 }
 // controller to create a habit
 module.exports.createHabit = function(req,res){
-    console.log(req.body.description);
     let days = {
         one:"none",
         two:"none",
