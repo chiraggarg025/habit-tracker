@@ -1,3 +1,4 @@
+// function to make searchbar work
 function search_habit() { 
     let input = document.getElementById('searchbar').value 
     input=input.toLowerCase(); 

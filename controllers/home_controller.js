@@ -13,6 +13,7 @@ module.exports.home = function(req,res){
     })
     
 }
+// controller to create a habit
 module.exports.createHabit = function(req,res){
     console.log(req.body.description);
     let days = {
@@ -43,7 +44,7 @@ module.exports.createHabit = function(req,res){
         return res.redirect('back');
     });
 }
-
+// controller to delete a habit
 module.exports.deleteHabit = function(req,res){
     let id = req.query.id;
     Habit.findByIdAndDelete(id,function(err){

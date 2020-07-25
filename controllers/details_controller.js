@@ -1,6 +1,6 @@
 const Habit = require('../models/habits');
 const { json } = require('express');
-
+// controller got get details request
 module.exports.details = function(req,res){
     Habit.find({},function(err,habits){
         if(err){
@@ -35,10 +35,8 @@ module.exports.updateHabit = function(req,res){
                     newHabit.days[day]="none";
                 }
             }
-            console.log(prop)
             
         }
-        console.log(newHabit);
         // updating that found habit
         Habit.findByIdAndUpdate(id,newHabit,function(err,newCreatedHabit){
             if(err){

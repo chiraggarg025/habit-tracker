@@ -60,13 +60,7 @@
 .checked{
     text-decoration: line-through;
 }
-/* toast message */
-/* #msg-container{
-    position: absolute;
-    left: 40%;
-    right: auto;
-    top: 40%;
-    padding: 3%;
-    background-color: rgba(255,255,255,0.9);
-    z-index: 99;
-} */
+/* Streak button */
+#streak-container{
+    display: inline-block;
+}

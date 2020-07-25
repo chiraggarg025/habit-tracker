@@ -48,9 +48,9 @@
                     <!-- <span><i class="fa fa-check"></i></span> -->
                     <span id="habit-name"><h4><%= i.habit %></h4> </span>
                     <div>
-                        <a class="btn btn-success" href="/update-habit/?id=<%=i._id%>">
-                            <i class="fa fa-info"></i> Update
-                        </a>
+                        <form action="/details/update-habit/?id=<%=i._id%>&day=one&val=<%=i.days.one%>" method="POST" id="streak-container">
+                            <button class="btn btn-change-status" type="submit"><%=i.days.one%></button>
+                        </form>
                         <a class="btn btn-danger" href="/delete-habit/?id=<%=i._id%>">
                             <i class="fa fa-times"></i> Remove
                         </a>

@@ -19,7 +19,8 @@
     cursor: pointer;
     
 }
-.week-days :hover {
+
+#weekname :hover {
     background-color: rgb(233, 222, 222);
 }
 .week-days li{
